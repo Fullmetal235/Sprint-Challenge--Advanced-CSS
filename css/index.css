@@ -207,17 +207,18 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-  padding-top: -30px;
+  padding-top: 30px;
+  margin-left: 20px;
+  margin-top: 20px;
 }
 .nav-top {
   background-color: #f7f3f3;
-  margin-left: 100px;
-  margin-right: 100px;
   padding-bottom: 50px;
 }
 h1 {
   font-size: 75px;
-  margin-left: 300px;
+  margin-left: 400px;
+  margin-bottom: 30px;
 }
 footer {
   color: #22283B;
@@ -281,6 +282,9 @@ footer {
   border-radius: 10px;
 }
 @media (max-width: 500px) {
+  .main-header {
+    width: 500px;
+  }
   .sky {
     display: none;
   }
@@ -288,40 +292,40 @@ footer {
     display: none;
   }
   .blast {
-    width: 100px;
+    width: 500px;
   }
   nav {
-    float: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+    display: inline-block;
   }
   nav li {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: inline-block;
   }
   nav a {
     color: #444;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
+    display: inline-block;
+    margin-left: -100px;
+    padding-right: -50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
   }
   .nav-top {
     background-color: #f7f3f3;
-    padding-bottom: 50px;
   }
   h1 {
-    font-size: 20px;
-    margin-left: 75px;
-    margin-right: 75px;
+    font-size: 30px;
+    margin-left: 150px;
+    padding-right: -50px;
+  }
+  body {
+    width: 500px;
+  }
+  button {
+    width: 500px;
+    margin-left: -50px;
+    margin-top: 30px;
   }
 }
