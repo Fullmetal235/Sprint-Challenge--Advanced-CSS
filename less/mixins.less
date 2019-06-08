@@ -1,17 +1,58 @@
-.button {
-        background: black;
+.button(@background, @border-radius) {
+        background: @background;
         border:2px solid black;
-        border-radius: 10px;
+        border-radius: @border-radius;
         color: white;
         text-decoration: none;
         text-align: center;
-        text-decoration-color: white;
+        text-decoration-color: black;
         font-size: 20px;
         padding: 10px 75px;
         margin-top: -40px;
         padding-left: -10px;
         padding-right: -10px;
+
+
+        &:hover {
+            background-color: darken(teal, 5%);
 }
-button {
-    .button;
+
+}
+.navbar{
+    nav{
+        float: center;
+        margin-left: 150px;
+    
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 100px;
+        position: relative;
+    }
+    
+    nav a {
+       color: #444;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 14px;
+       padding-top: -30px; 
+    }
+    .nav-top {
+        background-color: rgb(247, 243, 243);
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 50px;
+    }
+    
+    h1 {
+        font-size: 75px;
+        margin-left: 300px;
+    } 
 }

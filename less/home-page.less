@@ -56,10 +56,14 @@
       p {
         margin-bottom: 26px;
       }
+    }
 
       .btn {
+      button{
+      .button(black, 5px);
       }
-    }
+      }
+  
 
     .walk-img {
       width: 46%;
@@ -74,7 +78,7 @@
   }
 }// home
 
-@media(max-width:500px){
+@media@phone{
 .main-header{
   width: 500px;
 }
@@ -86,7 +90,8 @@
 }
 
 .blast{
-width:500px;
+height: 500px;
+width: 100%;
 }
 
 nav{
@@ -102,16 +107,15 @@ nav li {
 }
 
 nav a {
- color: #444;
- text-decoration: none;
- text-transform: uppercase;
- font-size: 14px;
- display: inline-block;
- margin-left: -100px;
- padding-right: -50px;
- margin-top: 30px;
- display:flex;
- flex-direction: column;
+  color: rgb(68, 68, 68);
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-left: -100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none
+ 
 }
 .nav-top {
   background-color: rgb(247, 243, 243);
@@ -119,8 +123,8 @@ nav a {
 
 h1 {
   font-size: 30px;
-  margin-left: 150px;
-  padding-right:-50px;
+  margin-left: 50px;
+  padding-right: -50px;
 }
 
 body{
@@ -128,6 +132,7 @@ body{
 }
 
 button{
+  .button(black, 5px);
   width: 500px;
   margin-left:-50px;
   margin-top: 30px;

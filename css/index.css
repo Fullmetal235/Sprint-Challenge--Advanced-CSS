@@ -1,30 +1,33 @@
-.button {
-  background: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  color: white;
-  text-decoration: none;
-  text-align: center;
-  text-decoration-color: white;
-  font-size: 20px;
-  padding: 10px 75px;
-  margin-top: -40px;
-  padding-left: -10px;
-  padding-right: -10px;
+.navbar nav {
+  float: center;
+  margin-left: 150px;
 }
-button {
-  background: black;
-  border: 2px solid black;
-  border-radius: 10px;
-  color: white;
+.navbar nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.navbar nav li {
+  display: inline-block;
+  margin-left: 100px;
+  position: relative;
+}
+.navbar nav a {
+  color: #444;
   text-decoration: none;
-  text-align: center;
-  text-decoration-color: white;
-  font-size: 20px;
-  padding: 10px 75px;
-  margin-top: -40px;
-  padding-left: -10px;
-  padding-right: -10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding-top: -30px;
+}
+.navbar .nav-top {
+  background-color: #f7f3f3;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding-bottom: 50px;
+}
+.navbar h1 {
+  font-size: 75px;
+  margin-left: 300px;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -207,18 +210,17 @@ nav a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 14px;
-  padding-top: 30px;
-  margin-left: 20px;
-  margin-top: 20px;
+  padding-top: -30px;
 }
 .nav-top {
   background-color: #f7f3f3;
+  margin-left: 100px;
+  margin-right: 100px;
   padding-bottom: 50px;
 }
 h1 {
   font-size: 75px;
-  margin-left: 400px;
-  margin-bottom: 30px;
+  margin-left: 300px;
 }
 footer {
   color: #22283B;
@@ -272,6 +274,23 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+.home .walk .btn button {
+  background: black;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-decoration-color: black;
+  font-size: 20px;
+  padding: 10px 75px;
+  margin-top: -40px;
+  padding-left: -10px;
+  padding-right: -10px;
+}
+.home .walk .btn button:hover {
+  background-color: #006667;
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -292,7 +311,8 @@ footer {
     display: none;
   }
   .blast {
-    width: 500px;
+    height: 500px;
+    width: 100%;
   }
   nav {
     display: inline-block;
@@ -301,31 +321,44 @@ footer {
     display: inline-block;
   }
   nav a {
-    color: #444;
-    text-decoration: none;
+    color: #444444;
     text-transform: uppercase;
     font-size: 14px;
-    display: inline-block;
     margin-left: -100px;
-    padding-right: -50px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    text-decoration: none;
   }
   .nav-top {
     background-color: #f7f3f3;
   }
   h1 {
     font-size: 30px;
-    margin-left: 150px;
+    margin-left: 50px;
     padding-right: -50px;
   }
   body {
-    width: 500px;
+    width: (max-width: 500px);
   }
   button {
+    background: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    text-decoration-color: black;
+    font-size: 20px;
+    padding: 10px 75px;
+    margin-top: -40px;
+    padding-left: -10px;
+    padding-right: -10px;
     width: 500px;
     margin-left: -50px;
     margin-top: 30px;
+  }
+  button:hover {
+    background-color: #006667;
   }
 }
