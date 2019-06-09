@@ -15,9 +15,7 @@
   }
 
   .space-images {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
+    .space-things();
 
     img {
       width: 28%;
@@ -94,8 +92,11 @@ height: 500px;
 width: 100%;
 }
 
+@media@phone{
 nav{
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 nav ul {
@@ -103,7 +104,9 @@ nav ul {
 }
 
 nav li {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
 }
 
 nav a {
@@ -112,18 +115,23 @@ nav a {
   font-size: 14px;
   margin-left: -100px;
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
-  text-decoration: none
+  display: inline-flex;
+  flex-direction: row;
+  text-decoration: none;
+  justify-content: flex-start;
+  padding-right: -100px;
  
 }
 .nav-top {
   background-color: rgb(247, 243, 243);
+  width: 400px;
+  margin: 50px;
+
 }
 
 h1 {
   font-size: 30px;
-  margin-left: 50px;
+  margin-left: 75px;
   padding-right: -50px;
 }
 
@@ -134,8 +142,9 @@ body{
 button{
   .button(black, 5px);
   width: 500px;
-  margin-left:-50px;
+  margin-left:-20px;
   margin-top: 30px;
 }
 
+}
 }

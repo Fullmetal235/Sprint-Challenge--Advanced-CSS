@@ -29,6 +29,11 @@
   font-size: 75px;
   margin-left: 300px;
 }
+.space-things {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -286,7 +291,7 @@ footer {
   padding: 10px 75px;
   margin-top: -40px;
   padding-left: -10px;
-  padding-right: -10px;
+  margin-right: -50px;
 }
 .home .walk .btn button:hover {
   background-color: #006667;
@@ -314,11 +319,17 @@ footer {
     height: 500px;
     width: 100%;
   }
+}
+@media (max-width: 500px) and (max-width: 500px) {
   nav {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   nav li {
-    display: inline-block;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
   nav a {
     color: #444444;
@@ -326,16 +337,20 @@ footer {
     font-size: 14px;
     margin-left: -100px;
     margin-top: 30px;
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
     text-decoration: none;
+    justify-content: flex-start;
+    padding-right: -100px;
   }
   .nav-top {
     background-color: #f7f3f3;
+    width: 400px;
+    margin: 50px;
   }
   h1 {
     font-size: 30px;
-    margin-left: 50px;
+    margin-left: 75px;
     padding-right: -50px;
   }
   body {
@@ -353,9 +368,9 @@ footer {
     padding: 10px 75px;
     margin-top: -40px;
     padding-left: -10px;
-    padding-right: -10px;
+    margin-right: -50px;
     width: 500px;
-    margin-left: -50px;
+    margin-left: -20px;
     margin-top: 30px;
   }
   button:hover {
