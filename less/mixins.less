@@ -1,1 +1,66 @@
-// Mixins Here
+.button(@background, @border-radius) {
+        background: @background;
+        border:2px solid black;
+        border-radius: @border-radius;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+        text-decoration-color: black;
+        font-size: 20px;
+        padding: 10px 75px;
+        margin-top: -40px;
+        padding-left: -10px;
+        margin-right: -50px;
+        
+
+
+        &:hover {
+            background-color: darken(teal, 5%);
+}
+
+}
+.navbar{
+    nav{
+        float: center;
+        margin-left: 150px;
+    
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none
+    }
+    
+    nav li {
+        display: inline-block;
+        margin-left: 100px;
+        position: relative;
+    }
+    
+    nav a {
+       color: #444;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 14px;
+       padding-top: -30px; 
+    }
+    .nav-top {
+        background-color: rgb(247, 243, 243);
+        margin-left: 100px;
+        margin-right: 100px;
+        padding-bottom: 50px;
+    }
+    
+    h1 {
+        font-size: 75px;
+        margin-left: 300px;
+    } 
+}
+
+    .space-things{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    }
